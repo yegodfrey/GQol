@@ -1,0 +1,14 @@
+## Interface: 120000
+## Title: GQol
+## Notes: Game Quality of Life addon
+## Author: YourName
+## Version: 2.4
+## SavedVariables: GQolDB
+
+embeds.xml
+
+Core.lua
+Personal.lua
+Compass.lua
+SpaceBtn.lua
+UI.lua

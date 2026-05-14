@@ -1,0 +1,29 @@
+## Interface: 120005
+## Title: GQol
+## Notes: Quality of Life addon
+## Author: Godfrey
+## Version: 12.053
+## SavedVariables: GQolDB
+
+embeds.xml
+Core.lua
+Config.lua
+Utils.lua
+Locales\enUS.lua
+Locales\zhCN.lua
+Modules\System.lua
+Modules\Macros.lua
+Modules\ActionBars.lua
+Modules\EditMode.lua
+Modules\Sound.lua
+Modules\Compass.lua
+Modules\MooseLight.lua
+Modules\SpaceBtn.lua
+Modules\FreeLook.lua
+Modules\BanTarget.lua
+Modules\RangeCheck.lua
+Modules\PremadeGroupHelper.lua
+Modules\ProfessionTabs.lua
+Modules\AutoRoll.lua
+Modules\Mail.lua
+SettingsPanel.lua

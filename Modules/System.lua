@@ -12,8 +12,103 @@ function System:SaveSystemCVars()
 		"Gamma", "Brightness", "Contrast",
 		"Sound_EnableAllSound", "Sound_EnableMusic", "Sound_EnableSFX",
 		"Sound_OutputDriverIndex", "Sound_OutputSampleRate",
+		"Sound_MasterVolume", "Sound_MusicVolume", "Sound_SFXVolume",
+		"Sound_AmbienceVolume", "Sound_DialogVolume",
+		"Sound_EnableAmbience", "Sound_EnableDialog",
+		"Sound_EnableErrorSpeech", "Sound_EnableEmoteSounds",
+		"Sound_EnableLoopMusic", "Sound_EnablePetSounds",
+		"Sound_EnableSoundWhenGameIsInBG",
+		"Sound_MusicFadeSpeed", "Sound_NumChannels",
+		"Sound_SoundOutputQuality",
+		"Sound_VoiceChatInputVolume", "Sound_VoiceChatOutputVolume",
 		"cameraDistanceMaxZoomFactor", "cameraYawMoveSpeed",
+		"cameraPitchMoveSpeed", "cameraSmoothStyle",
+		"cameraSmoothFollows", "cameraSmoothFollowStrength",
+		"cameraSmoothTrackingStyle", "cameraFollowOnStick",
+		"cameraWaterCollision", "cameraPivotLock",
+		"cameraPivotLockCharacter",
 		"nameplateMaxDistance", "nameplateMinScale", "nameplateMaxScale",
+		"nameplateShowEnemies", "nameplateShowFriendly",
+		"nameplateShowFriendlyNPCs", "nameplateShowFriendlyMinions",
+		"nameplateShowEnemyMinions", "nameplateShowEnemyMinus",
+		"nameplateShowAll", "nameplateShowOnlyNames",
+		"nameplateShowDebuffsOnFriendly", "nameplateShowDishonorableTargets",
+		"nameplateClassColors", "nameplatePlayerMinAlpha",
+		"nameplateOccludedAlphaMult", "nameplateSelectedScale",
+		"nameplateNotSelectedAlpha", "nameplateTargetAtMinScale",
+		"nameplateMotion", "nameplateOverlapH", "nameplateOverlapV",
+		"graphicsQuality", "raidGraphicsQuality",
+		"worldTextScale", "maxFPS", "maxFPSBk",
+		"enableFloatingCombatText", "floatingCombatTextAllSpellMechanics",
+		"floatingCombatTextAuras", "floatingCombatTextCombatDamage",
+		"floatingCombatTextCombatDamageDirectional",
+		"floatingCombatTextCombatHealing", "floatingCombatTextCombatLogPeriodicSpells",
+		"floatingCombatTextCombatState", "floatingCombatTextDamageReduction",
+		"floatingCombatTextDodgeParryMiss", "floatingCombatTextEnergyGains",
+		"floatingCombatTextFloatMode", "floatingCombatTextHonorGains",
+		"floatingCombatTextLowManaHealth", "floatingCombatTextPetMeleeDamage",
+		"floatingCombatTextPetSpellDamage", "floatingCombatTextRepChanges",
+		"floatingCombatTextSpellMechanics", "floatingCombatTextSpellMechanicsOther",
+		"scriptErrors", "scriptWarnings",
+		"showBuffDuration", "showMinimap",
+		"showTargetCastbar", "showPartyCastbar",
+		"showCastOnTarget", "showArenaCastbar",
+		"showRaidCastbar", "showSpellQueueWindow",
+		"showClampedTargetTarget", "showTargetTarget",
+		"showComboPoints", "showReputationBar",
+		"factionNameplateColors", "threatPlaySound",
+		"threatFlashFrames", "threatShowNumeric",
+		"autoDeclineDuels", "autoDismount",
+		"autoLootDefault", "autoOpenLootHistory",
+		"autoPushSpells", "autoSelfCast",
+		"autoUnshift", "checkCursorPosition",
+		"colorBlindMode", "colorBlindWeaknessFilter",
+		"deselectOnClick", "enableMouseSpeed",
+		"enableWoWMouse", "GameTooltipActive",
+		"GameTooltipFollow", "GameTooltipFollowOff",
+		"GameTooltipHideCombat", "GameTooltipShowSpellID",
+		"GameTooltipShowSpellInfo", "GameTooltipShowItemID",
+		"lockActionBars", "lockChatWindows",
+		"secureAbilityToggle", "showNewPlayerExperience",
+		"showQuestTrackingTooltips", "showTutorials",
+		"enableHardwareCursor", "enableSpellQueuing",
+		"enableFullscreenGlow", "enableModechange",
+		"enableLiquidDetail", "enableMipmap",
+		"enableParticleNames", "enablePhysics",
+		"enableProjectedTextures", "enablePvpAlert",
+		"enableSmoothLighting", "enableSpecialEffects",
+		"farclip", "ffx", "ffxDeath",
+		"ffxGlow", "ffxLodBias", "ffxMode",
+		"ffxPostProcess", "ffxShadowLoD", "ffxWeather",
+		"gxAPI", "gxMaximize", "gxMultisample", "gxMultisampleQuality",
+		"gxResolution", "gxWindow", "gxWindowedMaximized",
+		"healthBarType", "hideChatButtons", "hidePartyUI",
+		"inboxNotify", "instantText",
+		"keepChatHistory", "legacyControlGroups",
+		"locale", "lockChatBubble",
+		"logChatToFile", "logCombatToFile",
+		"lootUnderMouse", "lossOfControl",
+		"lossOfControlAlerts", "lossOfControlFull",
+		"lossOfControlIcons", "lossOfControlInterrupt",
+		"lossOfControlSilence", "lossOfControlStopAttacks",
+		"lossOfControlStopCasting", "lossOfControlStopMoving",
+		"lossOfControlStopSpellTargeting", "lowLevelFilter",
+		"lowLevelQuestFilter", "macroFontSize",
+		"mainFrameShown", "mapOpacity",
+		"massLootConfirmation", "maxChatLines",
+		"merchantItemsPerRow", "messageDuration",
+		"messageFadeDuration", "microBarShown",
+		"minimapInsideZoom", "minimapMotionSickness",
+		"minimapOutsideZoom", "minimapPing",
+		"minimapShowMinimapEdgeIcons", "minimapTrackingHide",
+		"missingTalentAlert", "mouseInvertPitch",
+		"mouseLookInvert", "mouseLookSpeed",
+		"mouseLookSpeedPitch", "mouseMoveStop",
+		"movementStrafesToTurns", "movementStrafesToTurnsTime",
+		"movieSubtitle", "movieSubtitleFadeIn",
+		"movieSubtitleFadeOut", "movieSubtitleTime",
+		"multiMonitorCursorLock", "multiMonitorSetup",
+		"multiSampleAntiAlias", "multiSampleAlphaToCoverage",
 	}
 
 	for _, cvarName in ipairs(importantCVars) do
@@ -41,51 +136,4 @@ function System:ApplySystemCVars()
 	end
 
 	Utils:SendApplyMessage("SYSTEM_APPLIED", changed)
-end
-
-function System:SaveKeybindings()
-	local bindings = {}
-	for i = 1, GetNumBindings() do
-		local command, _, key1, key2 = GetBinding(i)
-		if command then
-			bindings[command] = {key1, key2}
-		end
-	end
-
-	GQol.db.global.keybindings = bindings
-	Utils:SendMessage("KEYBINDINGS_SAVED")
-end
-
-function System:ApplyKeybindings()
-	local saved = GQol.db.global.keybindings
-	if Utils:IsEmpty(saved) then
-		return Utils:SendApplyMessage("KEYBINDINGS_NO_SETTINGS")
-	end
-
-	for i = 1, GetNumBindings() do
-		local _, _, key1, key2 = GetBinding(i)
-		if key1 then SetBinding(key1) end
-		if key2 then SetBinding(key2) end
-	end
-
-	for command, keys in pairs(saved) do
-		local k1, k2 = keys[1], keys[2]
-		if k1 then SetBinding(k1, command) end
-		if k2 then SetBinding(k2, command) end
-	end
-
-	SaveBindings(GetCurrentBindingSet())
-	Utils:SendApplyMessage("KEYBINDINGS_APPLIED")
-end
-
-function System:GetOptions()
-	local CH = Utils.ConfigHelpers
-	return {
-		systemSave = CH.Execute(41, "SYSTEM_SAVE_BTN", Utils:ModuleExecute("System", "SaveSystemCVars")),
-		systemApply = CH.Execute(42, "SYSTEM_APPLY_BTN", Utils:ModuleExecute("System", "ApplySystemCVars")),
-		systemAutoApply = CH.ProfileToggle(43, "SYSTEM_AUTO_APPLY_CBOX", "autoApplySystemOnLogin"),
-		keybindingsSave = CH.Execute(51, "KEYBINDINGS_SAVE_BTN", Utils:ModuleExecute("System", "SaveKeybindings")),
-		keybindingsApply = CH.Execute(52, "KEYBINDINGS_APPLY_BTN", Utils:ModuleExecute("System", "ApplyKeybindings")),
-		keybindingsAutoApply = CH.ProfileToggle(53, "KEYBINDINGS_AUTO_APPLY_CBOX", "autoApplyKeybindingsOnLogin"),
-	}
 end

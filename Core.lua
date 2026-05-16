@@ -1,5 +1,5 @@
 local ADDON_NAME = "GQol"
-local GQol = LibStub("AceAddon-3.0"):NewAddon(ADDON_NAME, "AceEvent-3.0")
+local GQol = LibStub("AceAddon-3.0"):NewAddon(ADDON_NAME, "AceConsole-3.0", "AceEvent-3.0")
 _G[ADDON_NAME] = GQol
 
 GQol.L = {}

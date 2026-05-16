@@ -6,7 +6,7 @@ local L = GQol.L
 GQol.ProfessionTabs = GQol.ProfessionTabs or {}
 local PTabs = GQol.ProfessionTabs
 PTabs.frame = nil
-PTabs.activeTabs = {} -- 只保留这个
+PTabs.activeTabs = {}
 
 local EXTRA_SPELLS = {
 	436854, -- 切换飞行模式

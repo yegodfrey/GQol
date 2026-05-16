@@ -1,5 +1,5 @@
 local GQol = _G.GQol
-local Utils, L = GQol.Utils, GQol.L
+local Utils, L, CH = GQol.Utils, GQol.L, GQol.Utils.ConfigHelpers
 
 GQol.Mail = GQol.Mail or {}
 local Mail = GQol.Mail
@@ -216,7 +216,6 @@ function Mail:OnDisable()
 end
 
 function Mail:GetOptions()
-    local CH = Utils.ConfigHelpers
     local db = GetMailDB()
 
     local options = {

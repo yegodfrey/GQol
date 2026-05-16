@@ -27,10 +27,10 @@ function System:SaveSystemCVars()
 		-- 团队框体
 		"raidFramesDisplayIncomingHeals", "raidFramesDisplayPowerBars",
 		"raidFramesDisplayAggroHighlight", "raidFramesDisplayClassColor",
-		"raidFramesBackground", "raidFramesDisplayPets",
+		"raidFramesShowBackground", "raidFramesDisplayPets",
 		"raidFramesDisplayMainTankAndAssist", "raidFramesDisplayDebuffs",
 		"raidFramesDisplayOnlyDispellableDebuffs", "raidFramesDisplayDispelHighlight",
-		"raidFramesDisplayDispelColor", "raidFramesDisplayHealthText",
+		"raidFramesUseDispelColors", "raidFramesDisplayHealthText",
 		-- 竞技场对手框体
 		"arenaFramesDisplayPowerBars", "arenaFramesDisplayPets",
 		"arenaFramesDisplayHealthText",
@@ -40,7 +40,7 @@ function System:SaveSystemCVars()
 		-- 战斗
 		"showPersonalResource", "showSelfHighlight",
 		"showOutlineWhenOccluded", "showTargetTarget",
-		"noFlashOnLowHealth", "lossOfControl",
+		"noFlashOnLowHealth", "lossOfControlAlerts",
 		"enableMouseoverCast", "autoSelfCast",
 		"focusCastKey", "enableEmpoweredCastInput",
 		"spellAlertOpacity", "enableHoldToCast",
@@ -54,7 +54,7 @@ function System:SaveSystemCVars()
 		"autoAcceptQuickJoin", "chatStyle",
 		"showChatTimestamps",
 		-- 信号系统
-		"enablePingSystem", "pingSound", "showPingsInChat",
+		"enablePingSystem", "pingMode", "pingSound", "showPingsInChat",
 		-- 游戏增强
 		"enableBossAlerts", "enableBossEmotes",
 		"enableCooldownManager", "enableExternalDefensives",
@@ -70,7 +70,7 @@ function System:SaveSystemCVars()
 		"nameplateShowCastBar", "nameplateShowThreat",
 		"nameplateShowDebuffsOnEnemy", "nameplateShowDebuffsOnFriendly",
 		-- 界面
-		"uiScale", "questTextContrast",
+		"uiScale", "worldTextScale", "questTextContrast",
 		-- 综合
 		"showMovePad", "enablePhotosensitivityMode",
 		"minCharacterNameSize", "cameraShake",
@@ -78,7 +78,7 @@ function System:SaveSystemCVars()
 		-- 系统 图形
 		"useUIScale", "Gamma", "Brightness", "Contrast",
 		"vsync", "lowLatencyMode",
-		"antiAliasing", "multiSampleTechnique",
+		"antiAliasing", "multiSampleTechnique", "multiSampleTest",
 		"cameraFOV", "shadowQuality", "liquidDetail",
 		"particleDensity", "ssao",
 		"depthOfField", "computeEffects",
@@ -89,7 +89,7 @@ function System:SaveSystemCVars()
 		"rayTracingShadows", "resampleQuality",
 		"vrsMode", "graphicsAPI",
 		"physicsInteractions", "maxFPS", "maxFPSBk",
-		"targetFPS", "resampleSharpness",
+		"targetFPS", "resampleSharpness"
 	}
 
 	for _, cvarName in ipairs(importantCVars) do
